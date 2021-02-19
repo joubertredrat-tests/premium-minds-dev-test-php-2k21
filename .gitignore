@@ -1,0 +1,8 @@
+/var/
+/vendor/
+/composer.phar
+.phpunit
+.phpunit.result.cache
+/phpunit.xml
+/tests/_reports/*
+/.idea/

@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+
+<?php
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use App\Command\GameCommand;
+use App\Command\IndexCommand;
+use Symfony\Component\Console\Application;
+
+$indexCommand = new IndexCommand();
+$gameCommand = new GameCommand();
+
+$app = new Application();
+$app->add($indexCommand);
+$app->add($gameCommand);
+$app->setDefaultCommand($indexCommand->getName());
+$app->run();

@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  premium-minds-pokemon-php:
+    container_name: premium-minds-pokemon-php
+    build:
+      context: .
+      dockerfile: ./scripts/docker/php-cli/Dockerfile
